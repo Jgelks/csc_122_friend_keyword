@@ -34,6 +34,14 @@ Rectangle scale(Rectangle rectangle, int factor)
   return Rectangle(width, height);
 }
 
+Rectangle swap(Rectangle rectangle)
+{
+  int temp = rectangle.get_width();
+  int width = rectangle.get_height();
+  int height = temp;
+  return Rectangle(width, height);
+}
+
 int main()
 {
   Rectangle r1(2, 3);
